@@ -87,6 +87,17 @@ https://www.example.com/products/electronics
 
 
 ### クエリ
+**クエリ**は、URLの末尾に付けられる可変的なデータのことで、サーバーに対して追加の情報を提供する役割を持っています。クエリは、`?` に続いてパラメータと値のペアが指定され、複数のパラメータがある場合は `&` で区切られます。
+
+例えば、以下のURLにはクエリが含まれています。
+
+```
+https://www.example.com/search?query=smartphone&category=electronics
+```
+
+この場合、`?query=smartphone&category=electronics` がクエリ部分です。`query` というパラメータに `smartphone` という値が割り当てられ、`category` というパラメータには `electronics` が割り当てられています。これにより、検索条件やフィルタリングの指定ができるようになります。
+
+クエリは、動的なウェブページやAPIでよく使われ、URLに含めることで検索条件やユーザー指定のデータをサーバーに送信する役割を果たします。
 
 ## 参考文献
 - [ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識](https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E7%AC%AC2%E7%89%88-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81%E5%85%89%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822283119/ref=sr_1_1?adgrpid=134175418048&dib=eyJ2IjoiMSJ9.vpvIHoRCn3P1bAtbklE7cemtsSOFkrZx9fPQhqk8qU97fLvmQ_V3KSnJ_E9_1u-yLRH67Hlc9nBUGTWdQUBBw3wMPFRgCOr_GYbWdscuDMwmhgMabEYdcYBFE3US1xQtgOlcrxoX-fFd-0HBYlkzwu6_R5H1pkMMWGxmD9swHfBz_vi90_P8cGuRN_mtq7nYqH8xYtNwIPwzmINHT6evH8ktla5ZdguQAqtowb068NY._3oThyd71VCQ3urAq3dEQIssm14gOUdEDEMt4ulwJOY&dib_tag=se&hvadid=698971708741&hvdev=c&hvqmt=e&hvtargid=kwd-332754015790&hydadcr=4077_13405368&jp-ad-ap=0&keywords=%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B&qid=1725772701&s=books&sr=1-1)
