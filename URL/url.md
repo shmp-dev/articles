@@ -19,7 +19,7 @@ URI = あらゆる資源を識別するための文字列
 ## URI の 書式
 基本的な html スキームの場合、次のような書式で表現されます。
 
-![URIの構造](./image/url_http_scheme.png)
+![URIの構造](./image/url.png)
 
 ### スキーム
 ブラウザーがリソースを取得する際に使用するプロトコルを示します。
@@ -87,7 +87,8 @@ https://www.example.com/products/electronics
 
 
 ### クエリ
-**クエリ**は、URLの末尾に付けられる可変的なデータのことで、サーバーに対して追加の情報を提供する役割を持っています。クエリは、`?` に続いてパラメータと値のペアが指定され、複数のパラメータがある場合は `&` で区切られます。
+**クエリ**は、URLの末尾に付けられる可変的なデータのことで、サーバーに対して追加の情報を提供する役割を持っています。
+クエリは、`?` に続いてパラメータと値のペアが指定され、複数のパラメータがある場合は `&` で区切られます。
 
 例えば、以下のURLにはクエリが含まれています。
 
@@ -95,7 +96,9 @@ https://www.example.com/products/electronics
 https://www.example.com/search?query=smartphone&category=electronics
 ```
 
-この場合、`?query=smartphone&category=electronics` がクエリ部分です。`query` というパラメータに `smartphone` という値が割り当てられ、`category` というパラメータには `electronics` が割り当てられています。これにより、検索条件やフィルタリングの指定ができるようになります。
+この場合、`?query=smartphone&category=electronics` がクエリ部分です。
+`query` というパラメータに `smartphone` という値が割り当てられ、`category` というパラメータには `electronics` が割り当てられています。
+これにより、検索条件やフィルタリングの指定ができるようになります。
 
 クエリは、動的なウェブページやAPIでよく使われ、URLに含めることで検索条件やユーザー指定のデータをサーバーに送信する役割を果たします。
 
