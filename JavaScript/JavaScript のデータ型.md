@@ -7,14 +7,13 @@ const person = {name: 'John'};
 const newPerson = person;
 
 newPerson.name = 'David';
-console.log(person.name);
-console.log(newPerson.name);
+console.log(person.name); // １の出力
+console.log(newPerson.name); // ２の出力
 ```
 
-`person`オブジェクトは変更されてないから、出力は`John`に決まっていると思った方、注意が必要です。
+１の出力が'John'で、２の出力が'David' になると思った方、注意が必要です。
 
-
-正解は、`David`が2回出力されることになります。
+正解は、'David'が2回出力されることになります。
 
 ▼正解(出力される文字列)
 ```
@@ -23,6 +22,9 @@ David
 ```
 
 ここでのポイントは、JavaScript ではデータの型として「基本型」と「参照型」を持つ ということです。
+つまり、基本型は値そのものを直接扱い、参照型はオブジェクトの参照を扱うため、同じオブジェクトを指す複数の変数が存在する場合、どの変数からもオブジェクトの変更が反映されてしまうのです。
+
+内容を詳しく説明します。
 
 ## 「基本型」とは
 基本型として扱われるデータ型には、次のような種類があります。
@@ -77,7 +79,6 @@ console.log(obj2.name); // Bob
 
 では、オブジェクトの参照を渡すのではなく、コピーして別々のオブジェクトとして扱いたい場合、どのようにすれば良いでしょうか？
 
-
 ## 参照型のコピーを実装する方法
 配列やオブジェクトの値をコピーする方法はいくつか存在します。
 ここでは、代表的な手法を紹介します。
@@ -89,7 +90,7 @@ console.log(obj2.name); // Bob
 
 ```javascript
 const array1 = [1, 2, 3];
-const array2 = [...array1];
+const array2 = [...array1]; // [1, 2, 3]になるイメージ
 array2.push(4);
 console.log(array1); // [1, 2, 3]
 console.log(array2); // [1, 2, 3, 4]
